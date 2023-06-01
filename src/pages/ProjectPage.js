@@ -5,11 +5,11 @@ const ProjectPage = () => {
                         <ul>
                               <li>
                                     <span className="project-item">
-                                          <a className="link" href="https://github.com/IseMike/">
+                                          <a className="link" href="https://github.com/IseMike/IMS-Portfolio-Website">
                                                 This Website
                                           </a>
                                           <p>A React application displaying my information about me</p>
-                                          <p>React, Javascript, Git, CSS</p>
+                                          <p>React, Javascript, Git, HTML, CSS</p>
                                     </span>
                               </li>
                               <li>
