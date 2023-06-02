@@ -3,7 +3,7 @@ import AboutMePage from './pages/AboutMePage';
 import EducationPage from './pages/EducationPage';
 import SocialPage from './pages/SocialPage';
 import ProjectPage from './pages/ProjectPage';
-import ContactMePage from './pages/ContactMePage';
+import Slideshow from './feature/slideshow/Slideshow';
 import 'font-awesome/css/font-awesome.css';
 
 function App() {
@@ -12,19 +12,27 @@ function App() {
                   <div className="section">
                         <h1>About Me</h1>
                         <AboutMePage />
-                        <ContactMePage />
                   </div>
                   <div className="section">
                         <h1>Education</h1>
-                        <EducationPage />
+                        <div className="section-inline">
+                              <div className='education-conatiner'>
+                                    <EducationPage />
+                              </div>
+                              <div className='slideshow-container'>
+                                    <Slideshow />
+                              </div>
+                        </div>
                   </div>
                   <div className='section'>
-                        <h1>Projects</h1>
-                        <ProjectPage />
-                  </div>
-                  <div className='section'>
-                        <h1>Socials</h1>
-                        <SocialPage />
+                        <div className='section-inline'>
+                              <h1>Projects</h1>
+                              <h1 className='heading-right'>Socials</h1>
+                        </div>
+                        <div className='section-inline'>
+                              <ProjectPage />
+                              <SocialPage />
+                        </div>
                   </div>
             </div>
       );

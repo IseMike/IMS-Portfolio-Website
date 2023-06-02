@@ -8,7 +8,7 @@ const ProjectPage = () => {
                                           <a className="link" href="https://github.com/IseMike/IMS-Portfolio-Website">
                                                 This Website
                                           </a>
-                                          <p>A React application displaying my information about me</p>
+                                          <p>A React application displaying my portfolio.</p>
                                           <p>React, Javascript, Git, HTML, CSS</p>
                                     </span>
                               </li>

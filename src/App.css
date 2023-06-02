@@ -1,5 +1,5 @@
 body {
-      background-color: #F8F8F8;
+      background-color: #eddccb;
 }
 
 
@@ -17,6 +17,8 @@ span {
 .section {
       margin-bottom: 5%;
       margin-left: 10px;
+      display: flex;
+      flex-direction: column;
 }
 
 .education-item {
@@ -42,8 +44,37 @@ span {
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
-    }
-    
-    .contact-button:hover {
+}
+
+.contact-button:hover {
       background-color: darkorange;
-    }
+}
+
+.section-inline {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+}
+
+.education-container {
+      flex: 1;
+}
+
+.slideshow-container {
+      width: 60%;
+      margin-left: 20px;
+      margin-right: 10px;
+      background-color: #bfbdbd;
+      outline: #FF5500 solid;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+}
+
+.contact-me-container {
+      max-width:50%
+}
+
+.heading-right {
+      margin-right: 23%;
+}
