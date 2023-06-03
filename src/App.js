@@ -26,10 +26,6 @@ function App() {
                   </div>
                   <div className='section'>
                         <div className='section-inline'>
-                              <h1>Projects</h1>
-                              <h1 className='heading-right'>Socials</h1>
-                        </div>
-                        <div className='section-inline'>
                               <ProjectPage />
                               <SocialPage />
                         </div>

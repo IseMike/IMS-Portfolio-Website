@@ -5,6 +5,7 @@ import ContactMeButton from '../components/ContactMeButton';
 function SocialPage() {
       return (
             <div className="social-container">
+                  <h1>Socials</h1>
                   <div className="social-content">
                         <a href="https://www.linkedin.com/in/isaac-shepherd-3957031aa/">
                               <FontAwesomeIcon icon={faLinkedin} size='5x' color='#0072b1' />

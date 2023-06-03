@@ -1,9 +1,11 @@
+import profilePicture from '../assets/img/profile_picture.jpg';
+
 function AboutMePage() {
       return (
             <div className="about-me-container">
-                  <div className="about-me-content">
+                  <div className="section-inline">
                         <img
-                              src="path/to/your/profile-picture.jpg"
+                              src={profilePicture}
                               alt="Me"
                               className="profile-picture"
                         />
