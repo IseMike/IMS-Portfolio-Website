@@ -1,15 +1,15 @@
 import profilePicture from '../assets/img/profile_picture.jpg';
 
-function AboutMePage() {
+function AboutMePage({ isNewStyle }) {
       return (
-            <div className="about-me-container">
-                  <div className="section-inline">
+            <div className={isNewStyle ? "new-about-me-container" : "about-me-container"}>
+                  <div className={isNewStyle ? "new-section-inline" : "section-inline"}>
                         <img
                               src={profilePicture}
                               alt="Me"
-                              className="profile-picture"
+                              className={isNewStyle ? "new-profile-picture" : "profile-picture"}
                         />
-                        <div className="about-me-text">
+                        <div className={isNewStyle ? "new-about-me-text" : "about-me-text"}>
                               <h2>Isaac Shepherd</h2>
                               <p>
                                     Hey there, My name is Isaac Shepherd. I'm a recent NuCamp Graduate with a bachelor's in computer science.

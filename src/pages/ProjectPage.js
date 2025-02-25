@@ -1,12 +1,12 @@
-const ProjectPage = () => {
+const ProjectPage = ({ isNewStyle }) => {
       return (
-            <div className="project-container">
+            <div className={isNewStyle ? "new-project-container" : "project-container"}>
                   <h1>Projects</h1>
-                  <div className="project-content">
+                  <div className={isNewStyle ? "new-project-content" : "project-content"}>
                         <ul>
                               <li>
-                                    <span className="project-item">
-                                          <a className="link" href="https://github.com/IseMike/IMS-Portfolio-Website">
+                                    <span className={isNewStyle ? "new-project-item" : "project-item"}>
+                                          <a className={isNewStyle ? "new-link" : "link"} href="https://github.com/IseMike/IMS-Portfolio-Website">
                                                 This Website
                                           </a>
                                           <p>A React application displaying my portfolio.</p>
@@ -14,8 +14,8 @@ const ProjectPage = () => {
                                     </span>
                               </li>
                               <li>
-                                    <span className="project-item">
-                                          <a className="link" href="https://github.com/IseMike/Nucamp-Mock-Up-React-Native">
+                                    <span className={isNewStyle ? "new-project-item" : "project-item"}>
+                                          <a className={isNewStyle ? "new-link" : "link"} href="https://github.com/IseMike/Nucamp-Mock-Up-React-Native">
                                                 Mock-up Mobile App
                                           </a>
                                           <p>A React Native app of a mock restaurant.</p>
@@ -23,8 +23,8 @@ const ProjectPage = () => {
                                     </span>
                               </li>
                               <li>
-                                    <span className="project-item">
-                                          <a className="link" href="https://github.com/IseMike/Nucamp-Mock-up-React">
+                                    <span className={isNewStyle ? "new-project-item" : "project-item"}>
+                                          <a className={isNewStyle ? "new-link" : "link"} href="https://github.com/IseMike/Nucamp-Mock-up-React">
                                                 Mock-up React Website
                                           </a>
                                           <p>A website for a mock restaurant built in React.</p>
@@ -32,8 +32,8 @@ const ProjectPage = () => {
                                     </span>
                               </li>
                               <li>
-                                    <span className="project-item">
-                                          <a className="link" href="https://github.com/IseMike/Nucamp-Mock-up">
+                                    <span className={isNewStyle ? "new-project-item" : "project-item"}>
+                                          <a className={isNewStyle ? "new-link" : "link"} href="https://github.com/IseMike/Nucamp-Mock-up">
                                                 Mock-up Website
                                           </a>
                                           <p>A mock restaurant's website built with HTML, CSS, and JavaScript.</p>
