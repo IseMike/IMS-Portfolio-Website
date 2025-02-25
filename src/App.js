@@ -17,21 +17,16 @@ function App() {
 
       return (
             <div className={isNewStyle ? 'new-body' : ''}>
-                  <button onClick={toggleStyle} className={isNewStyle ? 'new-toggle-style-button' : 'toggle-style-button'}>
-                        New Me
-                  </button>
                   {!isNewStyle ? (
                         <div>
                               <div className="section">
                                     <h1>About Me</h1>
-                                    <AboutMePage isNewStyle={isNewStyle} />
+                                    <AboutMePage isNewStyle={isNewStyle} toggleStyle={toggleStyle} />
                               </div>
                               <div className="section">
                                     <h1>Education</h1>
                                     <div className="section-inline">
-                                          <div className='education-container'>
-                                                <EducationPage isNewStyle={isNewStyle} />
-                                          </div>
+                                          <EducationPage isNewStyle={isNewStyle} />
                                           <div className='slideshow-container'>
                                                 <Slideshow isNewStyle={isNewStyle} />
                                           </div>
@@ -51,13 +46,24 @@ function App() {
                               </header>
                               <main className="main-content">
                                     <section className="new-about-me">
-                                          <h2>About Me</h2>
-                                          <AboutMePage isNewStyle={isNewStyle} />
+                                          <div className="new-about-me-layout">
+                                                <AboutMePage isNewStyle={isNewStyle} toggleStyle={toggleStyle} />
+                                                <div className="new-buttons-container">
+                                                      <button onClick={toggleStyle} className="new-toggle-style-button">
+                                                            Downgrade
+                                                      </button>
+                                                      <button className="dummy-button">Dummy 1</button>
+                                                      <button className="dummy-button">Dummy 2</button>
+                                                      <button className="dummy-button">Dummy 3</button>
+                                                </div>
+                                          </div>
                                     </section>
                                     <section className="new-section">
                                           <h2>Education</h2>
-                                          <div className="new-education-content">
-                                                <EducationPage isNewStyle={isNewStyle} />
+                                          <div className="new-section-inline">
+                                                <div className='new-education-container'>
+                                                      <EducationPage isNewStyle={isNewStyle} />
+                                                </div>
                                                 <Slideshow isNewStyle={isNewStyle} />
                                           </div>
                                     </section>

@@ -48,7 +48,7 @@ const Slideshow = ({ isNewStyle }) => {
         };
 
         return (
-            <div className="new-slideshow-container" style={{ width: '50%', margin: '0 auto' }}>
+            <div className="new-slideshow-container">
                 <Slider {...settings}>
                     {slides.map((slide) => (
                         <div key={slide.id} style={{ textAlign: 'center' }}>

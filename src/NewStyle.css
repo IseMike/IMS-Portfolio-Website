@@ -52,7 +52,7 @@
 }
 
 /* Buttons and links */
-.new-contact-button, .new-toggle-style-button {
+.new-contact-button, .new-toggle-style-button, .dummy-button {
     background: #FF6EC7; /* Neon Pink */
     color: white;
     padding: 10px 20px;
@@ -61,9 +61,10 @@
     cursor: pointer;
     transition: background 0.3s;
     white-space: nowrap;
+    margin-bottom: 10px;
 }
 
-.new-contact-button:hover, .new-toggle-style-button:hover {
+.new-contact-button:hover, .new-toggle-style-button:hover, .dummy-button:hover {
     background: #00FFFF; /* Neon Blue */
 }
 
@@ -82,18 +83,18 @@
 .new-section-inline {
     display: flex;
     gap: 20px;
+    align-items: flex-start; /* Align items to the start */
 }
 
 .new-education-content {
     display: flex;
-    flex-direction: column;
     gap: 20px;
     align-items: flex-start;
     flex: 1;
 }
 
 .new-slideshow-container {
-    width: 60%;
+    width: 50%;
     padding: 20px;
     background: #FFFFFF; /* White */
     border: 1px solid #333333; /* Dark Charcoal */
@@ -103,16 +104,28 @@
 
 /* About me */
 .new-about-me {
-    max-width: 70%;
-    margin: auto;
-    text-align: left;
+    margin: 2% 5%;  /* Match other sections */
+}
+
+.new-about-me-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .new-about-me-container {
-    background: #FFFFFF; /* White */
+    background: #FFFFFF;
+    margin-top: 20px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;  /* Take up half the space */
+}
+
+.new-about-me-heading {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .new-profile-picture {
@@ -123,6 +136,27 @@
 
 .new-about-me-text {
     color: #333333; /* Dark Charcoal */
+}
+
+.new-about-me-text-container {
+    background: #FFFFFF; /* White */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333333; /* Dark Charcoal */
+    }
+
+.new-buttons-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 10px;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Education */
@@ -150,8 +184,8 @@
 
 .new-education-date {
     color: #FF6EC7; /* Neon Pink */
-    margin-left: 20px; /* Add some space between the title and the date */
-    margin-top: 5px; /* Add some space above the date */
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 /* Projects */
