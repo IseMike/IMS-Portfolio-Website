@@ -3,7 +3,6 @@ import profilePicture from '../assets/img/profile_picture.jpg';
 function AboutMePage({ isNewStyle, toggleStyle }) {
       return (
             <div className={isNewStyle ? "new-about-me-container" : "about-me-container"}>
-                  {isNewStyle && <h2 className="new-about-me-heading">About Me</h2>}
                   <div className={isNewStyle ? "new-section-inline" : "section-inline"}>
                         <img
                               src={profilePicture}

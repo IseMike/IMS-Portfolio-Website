@@ -45,10 +45,13 @@ const Slideshow = ({ isNewStyle }) => {
             slidesToShow: 1,
             slidesToScroll: 1,
             afterChange: current => setIndex(current),
+            arrows: true,
+            prevArrow: <button type="button" className="slick-prev">Previous</button>,
+            nextArrow: <button type="button" className="slick-next">Next</button>
         };
 
         return (
-            <div className="new-slideshow-container">
+            <div style={{ position: 'relative', margin: '0 20px' }}>
                 <Slider {...settings}>
                     {slides.map((slide) => (
                         <div key={slide.id} style={{ textAlign: 'center' }}>
@@ -56,7 +59,7 @@ const Slideshow = ({ isNewStyle }) => {
                                 src={slide.image} 
                                 alt={`Slide ${slide.id}`}
                                 style={{ 
-                                    maxWidth: '50%',
+                                    maxWidth: '40%',
                                     width: 'auto', 
                                     height: 'auto',
                                     display: 'block',
@@ -66,13 +69,27 @@ const Slideshow = ({ isNewStyle }) => {
                         </div>
                     ))}
                 </Slider>
+                <style>{`
+                    .slick-prev, .slick-next {
+                        color: black !important;
+                    }
+                    .slick-prev:before, .slick-next:before {
+                        color: #333 !important;
+                        opacity: 0.75;
+                    }
+                    .slick-prev {
+                        left: -25px !important;
+                    }
+                    .slick-next {
+                        right: -25px !important;
+                    }
+                `}</style>
             </div>
         );        
     } 
 
     else {
         return (
-            <div>
                 <Carousel 
                     selectedItem={index} 
                     showThumbs={false} 
@@ -93,7 +110,6 @@ const Slideshow = ({ isNewStyle }) => {
                         </div>
                     ))}
                 </Carousel>
-            </div>
         );
     }
 };

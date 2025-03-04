@@ -1,7 +1,6 @@
 const ProjectPage = ({ isNewStyle }) => {
       return (
             <div className={isNewStyle ? "new-project-container" : "project-container"}>
-                  <h1>Projects</h1>
                   <div className={isNewStyle ? "new-project-content" : "project-content"}>
                         <ul>
                               <li>
