@@ -279,26 +279,24 @@
 .new-content-row .new-section {
     flex: 1;
     margin: 0;
-    max-width: 50%;
+    width: 100%;
+    max-width: 45%;
     border: 1px solid #333333;
 }
 
-/* Gallery specific styling */
 .new-gallery-container {
-    width: 60%;
-    margin-left: 20px;
-    margin-right: 10px;
-    background-color: #FFFFFF;  /* Match the new style's white background */
-    border: 1px solid #333333;  /* Match the new style's border */
+    width: 100%; 
+    margin: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #333333;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
-/* Buttons section styling */
 .new-buttons-section {
-    flex: 1;
-    max-width: 50%;
+    flex: 0.5;
+    max-width: 10%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -318,19 +316,15 @@
         padding: 0 20px;
     }
 
-    .new-content-row .new-section,
-    .new-buttons-section {
+    .new-content-row .new-section {
         max-width: 100%;
-    }
-
-    .new-gallery-container {
-        height: 300px;
+        width: 100%;
     }
 }
 
 /* Dark mode styles */
 .dark-mode .new-body {
-    background: #121212; /* Darker black for main background */
+    background: #121212; /* Darker black */
     color: #FF6EC7; /* Neon Pink */
 }
 
@@ -347,7 +341,7 @@
 .dark-mode .new-project-container,
 .dark-mode .new-social-container,
 .dark-mode .new-gallery-container {
-    background: #1f1f1f; /* Slightly lighter black for sections */
+    background: #1f1f1f; /* Slightly lighter black */
     color: #FF6EC7; /* Neon Pink */
     border-color: #FF6EC7;
 }
@@ -371,7 +365,6 @@
 .dark-mode h5,
 .dark-mode h6 {
     color: #39FF14; /* Neon Green */
-    text-shadow: 2px 2px 4px rgba(57, 255, 20, 0.2); /* Green glow effect */
 }
 
 /* Update slider arrows for dark mode */
@@ -383,20 +376,14 @@
 /* Update the dark mode link styles */
 .dark-mode .new-link {
     color: #FFFF00; /* Neon Yellow */
-    text-decoration: none;
-    transition: color 0.3s;
-    text-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
 }
 
 .dark-mode .new-link:hover {
-    color: #39FF14; /* Neon Green on hover */
-    text-decoration: underline;
-    text-shadow: 0 0 8px rgba(57, 255, 20, 0.7);
+    color: #39FF14; /* Neon Green */
 }
 
 .dark-mode .new-education-title {
     color: #39FF14; /* Neon Green */
-    text-shadow: 0 0 5px rgba(57, 255, 20, 0.3); /* Subtle green glow */
 }
 
 .dark-mode .new-education-date {
